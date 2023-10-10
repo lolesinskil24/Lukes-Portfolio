@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-7672d8d5.svg" />
+    /
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke's Portfolio</title>
+    <script type="module" crossorigin src="./assets/index-f04aa951.js"></script>
+    <link rel="stylesheet" href="./assets/index-e05d8aa7.css">
+  </head>
+  <body>
+    
+  <!-- <div id="preloader">
+    Loading...
+  </div>
+   
+  <div id="mainContent" style="display: none;"> added this wrapping div -->
+    <canvas id="bg"></canvas>   
+
+    <main>
+
+      <header>
+        <h1>Luke Olesinski</h1>
+        <p>🚀 Welcome to my portfolio!</p>
+      </header>
+
+
+      <blockquote>
+        <p>Self Quote...</p>
+        <!-- <p>I love both creating and using programming as a tool</p> -->
+      </blockquote>
+
+      <section>
+        <h2>📜 Manifesto</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <section class="light">
+        <h2>👩🏽‍🚀 Projects</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2>🏆 Accomplishments</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>The best way out is always through <br>-Robert Frost</p>
+      </blockquote>
+
+      <section class="left">
+        <h2>🧑‍💼 Work History</h2>
+
+        <h3>Lincoln Electric</h3>
+        <p>
+          I spent my 2023 Summer working with Lincoln Electric Additive Solutions. We worked and learned aside industry professionals in mechanical, electrical, software, and welding engineering. We learned all about about the process of additive manufacturing with robots, and were given ample opportunities to program and print parts with them. We also got to go through some weld training, but I mainly spent my time learning about their complex slicing software SculptPrint. The head of software took me through the process of completely building the software from scratch and working with the huge code base. I also learned OpenGL and got incite into how it was used to render 3D and 2D graphics in the software. As a final project, I created a Windows application with C++ and OpenGL to allow my co-intern to view a 3D representation of his .ply files by being able to zoom in and out, and pan around the model.
+        </p>
+        <h3>Burger King</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>Taco Bell</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>Thanks for watching!</p>
+      </blockquote>
+
+
+    </main>
+
+    <button onclick="playAudio()" style="z-index: 1000; position: relative; background-color: rgba(255, 0, 0, 0.7); color: white;">Play Music</button>
+
+    <audio id="ambientMusic" loop>
+        <source src="./assets/AmbientMusic-2be599d1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        audioPlaying = false;
+        function playAudio() {
+            const audioElement = document.getElementById("ambientMusic");
+            if (!audioPlaying) {
+              audioElement.play();
+              audioPlaying = true;
+            } else {
+              audioElement.pause();
+              audioPlaying = false;
+            }
+        }
+    </script>
+
+    <video id="video" loop autoplay muted>
+      <source src="./assets/void-f7e6d036.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- Vertex Shader -->
+<script id="vertexShader" type="x-shader/x-vertex">
+  varying vec2 vUv;
+
+  void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }
+</script>
+
+<!-- Fragment Shader -->
+<script id="fragmentShader" type="x-shader/x-fragment">
+  uniform sampler2D tDiffuse;
+  varying vec2 vUv;
+
+  void main() {
+      vec2 p = vUv;
+
+      // Simple distortion effect
+      float len = length(p - vec2(0.5, 0.5));
+      vec2 uv = p + (p - vec2(0.5, 0.5)) / len * 0.1 * sin(len * 10.0); 
+
+      gl_FragColor = texture2D(tDiffuse, uv);
+  }
+</script>
+
+
+    
+
+  <!-- </div> -->
+
+  </body>
+</html>
